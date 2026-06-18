@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    /* Alvos de Runtime modernos */
+    "target": "es2022",
+    "lib": ["es2022"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    /* Emissão e Mapas */
+    "sourceMap": true,
+    "outDir": "dist",
+    "removeComments": true,
+
+    /* Checagem de Tipo Estrita (agrupa strictNullChecks, noImplicitAny, etc.) */
+    "strict": true,
+
+    /* Regras Adicionais de Qualidade de Código */
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitOverride": true,
+
+    /* Módulos e Interoperabilidade */
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+
+    /* Resolução de Caminhos (Paths) */
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@test/*": ["./test/*"]
+    },
+    "rootDirs": [
+      "./src",
+      "./test"
+    ],
+
+    /* Decorators (Mantidos caso use NestJS, TypeORM, etc.) */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
